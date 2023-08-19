@@ -1,0 +1,97 @@
+<script type="text/javascript" src="../scripts/bootstrap.file-input.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//Place this plugin snippet into another file in your applicationb
+		(function($) {
+			$.toggleShowPassword = function(options) {
+				var settings = $.extend({
+					field : "#password",
+					control : "#toggle_show_password",
+				}, options);
+
+				var control = $(settings.control);
+				var field = $(settings.field)
+
+				control.bind('click', function() {
+					if (control.is(':checked')) {
+						field.attr('type', 'text');
+					} else {
+						field.attr('type', 'password');
+					}
+				})
+			};
+		}(jQuery));
+          
+		//Here how to call above plugin from everywhere in your application document body
+		$.toggleShowPassword({
+			field : '#txtPass',
+			control : '#chkPass'
+		});
+
+		$("#txtFecha").datepicker({
+			changeMonth : true,
+			changeYear : true,
+			dateFormat: 'dd-mm-yy',
+			yearRange: '1980:2015',
+			minDate: new Date(1980, 10 - 1, 25),
+	        maxDate: '+30Y'
+		});
+        $('input[type=file]').bootstrapFileInput();
+		$("#btnSaveRegistro").click(function() {
+			window.location.href = "../views/index.html";
+		});
+	});
+</script>
+
+<div class="modal-header" id="modal_partial">
+	<button type="button" class="close" data-dismiss="modal"
+		aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	<h4 class="modal-title">Registro de Expensas</h4>
+</div>
+<div class="modal-body">
+   <div class="row">
+     <div class="col-md-4">Codigo de Edificio</div>
+   </div>
+    <div class="row">
+       <div class="col-md-4">
+	     <select id="codigoEdificio" class="form-control">
+		  <option value="AAA01">AAA01</option>
+		  <option value="AAA02">AAA02</option>
+		  <option value="AAA03">AAA03</option>
+		  <option value="AAA04">AAA04</option>
+		 <option value="AAA05">AAA05</option>
+		 </select>
+		</div>
+	   </div>	
+	 
+	
+	</br>
+	<div class="row">
+	<div class="col-md-4"> Fecha</div>
+	</div>
+	<div class="row">
+	<div class="col-md-3"><input type="text" class="form-control" id="txtFecha" placeholder="Seleccione una fecha" /></div>
+	</div>
+    </br>
+    <div class="row">
+			<div class="col-md-4"> Expensas</div>
+	</div>
+	<div class="row">
+		<div id="txtDire" class="col-md-9"><input placeholder="Ingrese una dirección..." class="form-control" type="text"></input></div>
+		<div class="col-md-3"><input type="file" class="btn-primary" data-filename-placement="inside" title="Archivo"></div>
+	</div>
+    <div class="row">
+			<div class="col-md-4"> Facturas Pagas</div>
+	</div>
+	<div class="row">
+		<div id="txtDire" class="col-md-9"><input placeholder="Ingrese una dirección..." class="form-control" type="text"></input></div>
+		<div class="col-md-3"><input type="file" class="btn-primary" data-filename-placement="inside" title="Facturas"></div>
+	</div>
+    </br>
+  </div>     
+<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    <button type="button" id="btnSaveExpences" class="btn btn-primary">Guardar</button>
+</div>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+ 	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../css/site.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css">
+
+	<script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>	
+	<script type="text/javascript" src="../scripts/jquery-ui-1.10.0.custom.min.js"></script>	
+	<script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../scripts/login.js"></script>
+</head>
+<body>
+<div class="panel panel-default" style="width: 35%; margin-left: 30%; margin-top: 50px; position:fixed;">
+	<div class="panel-body" style="width: 80%; margin-left: 10%;">
+		<img id="logo_app" src="../images/logo_app.png" style="margin-left: 18%;" width="70%" /><br>
+		<div class="form-group">
+			<div class="row">
+			  <div class="col-md-4"><label>Usuario</label></div>
+			  <div class="col-md-6"><input class="form-control"></div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-md-4"><label>Contraseña</label></div>
+			  	<div class="col-md-6"><input type="password" class="form-control"></div>
+		  	</div>
+	  	</div>
+	  	<div class="form-group">
+			<div class="row">
+				<button id="btnReg" style="margin-left: 28%;" class="btn btn-primary">Registrarme!</button>
+				<button type="submit" id="btnLogin" style="margin-left: 1%; position:fixed;" class="btn btn-primary">Ingresar</button>
+		  	</div>
+	  	</div>
+	</div>
+</div>
+    <!-- Modal para renderizar pantalla de nuevo registro! -->
+    <div id="registerModal" class="modal fade">
+		<div class="modal-dialog">
+		    <div class="modal-content" id="registerModal-content">
+		
+            </div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</body>
+	<footer>
+			<h6>(C) 2015 - Todos los derechos Reservados</h6>
+	</footer>
+</html>

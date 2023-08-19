@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/adm/!svn/ver/73/AdministracionConsorcio/trunk/WebContent/views
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/login.html
+END
+modalNewTelefonoUtil.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/adm/!svn/ver/56/AdministracionConsorcio/trunk/WebContent/views/modalNewTelefonoUtil.html
+END
+notifications.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/notifications.html
+END
+inbox.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/inbox.html
+END
+modalNewNotificationPartial.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/adm/!svn/ver/56/AdministracionConsorcio/trunk/WebContent/views/modalNewNotificationPartial.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/index.html
+END
+menuPartial.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/menuPartial.html
+END
+config.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/config.html
+END
+noPage.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/noPage.html
+END
+telefonosUtiles.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/telefonosUtiles.html
+END
+modalSignUpPartial.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/adm/!svn/ver/65/AdministracionConsorcio/trunk/WebContent/views/modalSignUpPartial.html
+END
+messagePartial.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/adm/!svn/ver/56/AdministracionConsorcio/trunk/WebContent/views/messagePartial.html
+END
+modalNewBuildingPartial.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/adm/!svn/ver/73/AdministracionConsorcio/trunk/WebContent/views/modalNewBuildingPartial.html
+END

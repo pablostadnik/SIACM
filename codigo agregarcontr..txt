@@ -1,0 +1,40 @@
+if(isset($_POST["buscar"]) )
+		{	
+			if ($_POST["nombre"]=="")
+			{
+				$prop=$par->ver_contribuyentes();
+			}else{
+			$prop=$par->buscar_contribuyente($_POST["nombre"]);
+				 }
+		?>
+		<div class="container contenido">
+		<?php if (!empty($prop)){ ?>
+		<table class="table table-bordered table-hover" cellspacing="0" id = "tabla2"style ="width:800px;">
+		
+			<tr valign="top" align="center" >
+				<th>Id_Codigo</th>
+				<th>Nombre</th>
+				
+			</tr>
+			<?php 
+			for ($i=0;$i<sizeof($prop);$i++){ ?>
+				<tr valign="top" align="center">
+					<td valign="top" align="left"><?php if(isset($prop[$i]["id_contribuyente"]) ) { echo $prop[$i]["id_contribuyente"]; }?></td>
+					<td valign="top" align="left"><?php if(isset($prop[$i]["nombre"]) )  {echo $prop[$i]["nombre"]; }?></td>
+					
+					<td valign="top" align="center" width="25">
+						<a href="cargar_parcela.php?nombre1=<?php if(isset($prop[$i]["nombre"]) ) { echo $prop[$i]["nombre"]; }?>&codigo=<?php if(isset($cod) ) { echo $cod; }?>"><img src="img/aprobar.png"></img></a>
+					</td>
+				</tr>
+			<?php 
+			} 
+			?>
+		
+		</table>
+
+		<?php 
+		}
+		else
+		echo("No se encontro ningun registro");
+		}
+		?>

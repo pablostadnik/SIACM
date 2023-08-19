@@ -1,0 +1,66 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#ddlEdificio").multiselect({
+			nonSelectedText: 'Seleccione un edificio...',
+            nSelectedText: 'seleccionados',
+            allSelectedText: 'Todos',
+		});
+	})
+</script>
+
+<div class="modal-header" id="modal_partial">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Nuevo tel&eacute;fono &uacute;til</h4>
+</div>
+<div class="modal-body">
+<div class="row">
+	<div class="col-md-5">Nombres</div>
+	<div class="col-md-5">Apellido</div>
+</div>
+<div class="row">
+	<div id="txtNombre" class="col-md-5"><input type="text" class="form-control"></input></div>
+	<div id="txtApellido" class="col-md-5"><input type="text" class="form-control"></input></div>
+</div><br>
+<div class="row">
+	<div class="col-md-5">Tel&eacute;fono de l&iacute;nea</div>
+	<div class="col-md-5">Celular</div>
+</div>
+<div class="row">
+	<div id="txtTelefono" class="col-md-5"><input type="text" class="form-control"></input></div>
+	<div id="txtCelular" class="col-md-5"><input type="text" class="form-control""></input></div>
+</div><br>
+<div class="row">
+	<div class="col-md-5">E-Mail</div>
+	<div class="col-md-5">Especialidad</div>
+</div>
+<div class="row">
+	<div id="txtMail" class="col-md-5"><input type="text" class="form-control"></input></div>
+	<div id="txtEspecialidad" class="col-md-5">
+		<select id="ddlEspecialidad" class="form-control">
+			<option value="0">Seleccione especialidad...</option>	  
+			<option value="1">Albañil</option>
+			<option value="2">Cerrajero</option>
+			<option value="3">Electricista</option>
+			<option value="4">Gasista</option>
+			<option value="5">Plomero</option>
+		</select>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-5">
+		<select multiple="multiple" id="ddlEdificio">  
+		  <option value="1">Alicia Moreau de Justo 740</option>
+		  <option value="2">C&oacute;rdoba 760</option>
+		  <option value="3">Maip&uacute; 650</option>
+		  <option value="4">Lavalle 230</option>
+		  <option value="5">Scalabrini Ortiz 160</option>
+		</select>
+	</div>
+</div>
+<br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+<button type="button" id="btnSaveTelefono" class="btn btn-primary">Guardar</button>
+</div>

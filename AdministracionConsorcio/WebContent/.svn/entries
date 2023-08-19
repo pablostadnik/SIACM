@@ -1,0 +1,83 @@
+10
+
+dir
+78
+http://extranet.acciona-it.com/svn/adm/AdministracionConsorcio/trunk/WebContent
+http://extranet.acciona-it.com/svn/adm
+
+
+
+2015-04-14T07:21:25.802781Z
+73
+lmoglia
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d7f535be-43c7-437e-bc44-1774b82ce812
+
+META-INF
+dir
+
+WEB-INF
+dir
+
+css
+dir
+
+fonts
+dir
+
+images
+dir
+
+index.jsp
+file
+
+
+
+
+2015-04-14T20:27:17.792000Z
+395a8f2bf590991b527056569cc7783b
+2015-04-13T11:40:39.842064Z
+65
+lmoglia
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+48
+
+scripts
+dir
+
+views
+dir
+

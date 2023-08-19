@@ -1,0 +1,24 @@
+	public function incrementar()
+	{
+		$sql1="UPDATE `incrementar` SET `i`=i+1 WHERE 1";
+		$res=mysql_query($sql1, Conectar::con());
+		$sql2="SELECT * FROM `incrementar` WHERE 1";
+		$res2=mysql_query($sql2, Conectar::con());
+		while($reg=mysql_fetch_assoc($res2))
+				{
+					$this->vari[]=$reg;
+				}
+				return $this->vari;
+	}
+	public function decrementar()
+	{
+		$sql1="UPDATE `incrementar` SET `i`=i-1 WHERE 1";
+		$res=mysqli_query(Conectar::con(),$sql1);
+		$sql2="SELECT * FROM `incrementar` WHERE 1";
+		$res2=mysqli_query(Conectar::con(),$sql2);
+		while($reg=mysqli_fetch_assoc($res2))
+				{
+					$this->vari[]=$reg;
+				}
+				return $this->vari;
+	}

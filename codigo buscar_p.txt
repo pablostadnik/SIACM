@@ -1,0 +1,37 @@
+if(isset($_POST["buscar"]) )
+		{	
+			if ($_POST["nombre"]=="")
+			{
+				$prop=$par->ver_propietarios();
+			}else{
+			$prop=$par->buscar_propietario($_POST["nombre"]);
+				 }
+		?>
+		<div class="container contenido">
+		<?php if (!empty($prop)){ ?>
+		<table class="table table-bordered table-hover" cellspacing="0" id = "tabla2"style ="width:800px;">
+		
+			<tr valign="top" align="center" >
+				<th>Id_Codigo</th>
+				<th>Nombre</th>
+				
+			</tr>
+			<?php 
+			for ($i=0;$i<sizeof($prop);$i++){ ?>
+				<tr valign="top" align="center" onclick='enviarvariable(this)'>
+					<td valign="top" align="left"><?php if(isset($parc[$i]["id_propietario"])) { echo $prop[$i]["id_propietario"]; }?></td>
+					<td valign="top" align="left"><?php if(isset($parc[$i]["nombre"])) {echo $prop[$i]["nombre"]; }?></td>
+					
+				
+				</tr>
+			<?php 
+			} 
+			?>
+		
+		</table>
+
+		<?php 
+		}
+		else
+		echo("No se encontro ningun registro");
+		}

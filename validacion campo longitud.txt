@@ -1,0 +1,40 @@
+if (long2_1.value!='')
+{ 
+if (Enviar && long2_1.value.length!=10) {
+        alert("El campo longitud no tiene la cantidad de caracteres requerido, deben ser 10");
+        Enviar=false;
+        long2_1.focus();
+    }
+}
+if (long2_2.value!='')
+{ 
+if (Enviar && long2_2.value.length!=10) {
+        alert("El campo longitud no tiene la cantidad de caracteres requerido, deben ser 10");
+        Enviar=false;
+        long2_2.focus();
+    }
+}
+if (long2_3.value!='')
+{ 
+if (Enviar && long2_3.value.length!=10) {
+        alert("El campo longitud no tiene la cantidad de caracteres requerido, deben ser 10");
+        Enviar=false;
+        long2_3.focus();
+    }
+}
+if (long2_4.value!='')
+{ 
+if (Enviar && long2_4.value.length!=10) {
+        alert("El campo longitud no tiene la cantidad de caracteres requerido, deben ser 10");
+        Enviar=false;
+        long2_4.focus();
+    }
+}
+if (long2_5.value!='')
+{ 
+if (Enviar && long2_5.value.length!=10) {
+        alert("El campo longitud no tiene la cantidad de caracteres requerido, deben ser 10");
+        Enviar=false;
+        long2_5.focus();
+    }
+}

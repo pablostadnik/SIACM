@@ -1,0 +1,139 @@
+/*http://iconmonstr.com/g/?icon=iconmonstr-checkout-4-icon.png*/
+/*http://iconmonstr.com/g/?icon=iconmonstr-email-4-icon.png*/
+/*http://iconmonstr.com/g/?icon=iconmonstr-plus-2-icon.png*/
+/*http://iconmonstr.com/g/?icon=iconmonstr-rss-icon.png*/
+/*http://iconmonstr.com/g/?icon=iconmonstr-home-3-icon.png*/
+
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  /* font-size: small; */
+}
+
+footer{
+	bottom:0;
+	position: fixed;
+	width: 100%;
+	height: 50px; 
+	background-color: #29abe2; 
+	color: white;
+	text-align: center;
+	box-shadow: 0px 0px 5px 0px black;
+}
+
+.tipo_mensaje{
+	font-weight: bold;
+	font-family: arial;
+}
+
+.header_icon{
+
+}
+
+.message-table tbody tr{
+	cursor: pointer;
+}
+
+#tblInbox, #tblInbox2{
+	cursor: pointer;
+}
+
+.home{
+	height: 30px;
+	width: 30px;
+	background: url('../images/building_silver.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.home:hover{
+	background-image: url('../images/building_color.png');
+}
+
+.news:hover{
+	height: 30px;
+	width: 30px;
+	background: url('../images/news_color.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.news{
+	height: 30px;
+	width: 30px;
+	background-image: url('../images/news_silver.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.news_color{
+	height: 30px;
+	width: 30px;
+	background-image: url('../images/news_color.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.expensas{
+	height: 30px;
+	width: 30px;
+	background: url('../images/expensas_silver.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.expensas:hover{
+	background-image: url('../images/expensas_color.png');
+}
+.message{
+	height: 30px;
+	width: 30px;
+	background: url('../images/message_silver.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.message:hover{
+	background-image: url('../images/message_color.png');
+}
+
+.telefono{
+	height: 30px;
+	width: 30px;
+	background: url('../images/telefono_silver.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.telefono:hover{
+	background-image: url('../images/telefono_color.png');
+}
+
+.gear{
+	height: 30px;
+	width: 30px;
+	background: url('../images/gear_silver.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.gear:hover{
+	background-image: url('../images/gear_color.png');
+}
+
+.no_link_appearence{
+	/*color: black;*/
+	text-decoration: none;
+	border: none;
+}
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ellipsis.multiline {
+	white-space: normal;
+}

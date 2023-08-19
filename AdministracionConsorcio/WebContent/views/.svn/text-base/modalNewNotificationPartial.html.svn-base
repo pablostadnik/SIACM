@@ -1,0 +1,47 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#ddlEdificio").multiselect({
+			nonSelectedText: 'Seleccione un edificio...',
+            nSelectedText: 'seleccionados',
+            allSelectedText: 'Todos',
+		});
+	})
+</script>
+<div class="modal-header" id="modal_partial">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Nueva notificaci&oacute;n</h4>
+</div>
+<div class="modal-body">
+<div class="row">
+	<div class="col-md-4">Asunto</div>
+</div>
+<div class="row">
+	<div id="txtCode" class="col-md-4"><input type="text" class="form-control" style="width: 500px;"></input></div>
+</div>
+</br>
+<div class="row">
+	<div class="col-md-4">
+		<select multiple="multiple" id="ddlEdificio">  
+		  <option value="1" selected>Alicia Moreau de Justo 740</option>
+		  <option value="2">C&oacute;rdoba 760</option>
+		  <option value="3">Maip&uacute; 650</option>
+		  <option value="4">Lavalle 230</option>
+		  <option value="5">Scalabrini Ortiz 160</option>
+		</select>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-4">Mensaje</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<textarea class="form-control" style="width: 500px;" rows="5"></textarea>
+	</div>
+</div>
+<br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+<button type="button" id="btnSaveNotification" class="btn btn-primary">Guardar</button>
+</div>

@@ -1,0 +1,112 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+		//Place this plugin snippet into another file in your applicationb
+		(function($) {
+			$.toggleShowPassword = function(options) {
+				var settings = $.extend({
+					field : "#password",
+					control : "#toggle_show_password",
+				}, options);
+
+				var control = $(settings.control);
+				var field = $(settings.field)
+
+				control.bind('click', function() {
+					if (control.is(':checked')) {
+						field.attr('type', 'text');
+					} else {
+						field.attr('type', 'password');
+					}
+				})
+			};
+		}(jQuery));
+
+		//Here how to call above plugin from everywhere in your application document body
+		$.toggleShowPassword({
+			field : '#txtPass',
+			control : '#chkPass'
+		});
+
+		$("#txtFechaNacimiento").datepicker({
+			changeMonth : true,
+			changeYear : true,
+			dateFormat: 'dd-mm-yy',
+			yearRange: '1980:2015',
+			minDate: new Date(1980, 10 - 1, 25),
+	        maxDate: '+30Y'
+		});
+
+		$("#btnSaveRegistro").click(function() {
+			window.location.href = "../views/index.html";
+		});
+	});
+</script>
+
+<div class="modal-header" id="modal_partial">
+	<button type="button" class="close" data-dismiss="modal"
+		aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	<h4 class="modal-title">Registro de nuevo usuario</h4>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-md-5">Nombres</div>
+		<div class="col-md-5">Apellido</div>
+	</div>
+	<div class="row">
+		<div id="txtNombre" class="col-md-5">
+			<input type="text" class="form-control" style="width: 200px;"></input>
+		</div>
+		<div id="txtApellido" class="col-md-5">
+			<input type="text" class="form-control" style="width: 200px;"></input>
+		</div>
+	</div>
+	</br>
+	<div class="row">
+		<div class="col-md-5">DNI</div>
+		<div class="col-md-5">Fecha de nacimiento</div>
+	</div>
+	<div class="row">
+		<div id="txtDni" class="col-md-5">
+			<input type="text" class="form-control" style="width: 200px;"></input>
+		</div>
+		<div id="txtFecha" class="col-md-5">
+			<input type="text" id="txtFechaNacimiento" class="form-control"
+				style="width: 200px;"></input>
+		</div>
+	</div>
+	</br>
+	<div class="row">
+		<div class="col-md-5">Nombre de usuario</div>
+		<div class="col-md-5">E-Mail</div>
+	</div>
+	<div class="row">
+		<div id="txtUser" class="col-md-5">
+			<input type="text" class="form-control" style="width: 200px;"></input>
+		</div>
+		<div id="txtUser" class="col-md-5">
+			<input type="email" class="form-control" style="width: 200px;"></input>
+		</div>
+	</div>
+	</br>
+	<div class="row">
+		<div class="col-md-5">Contraseña</div>
+	</div>
+	<div class="row">
+		<div class="col-md-5">
+			<input type="password" id="txtPass" class="form-control"
+				style="width: 200px;"></input>
+			<div class="checkbox">
+				<label> <input id="chkPass" type="checkbox"> Mostrar
+					contraseña...
+				</label>
+			</div>
+			<!--<img src="../images/showHidePass.png" width="10%;" title="Mostrar u ocultar contraseña..." />-->
+		</div>
+	</div>
+	<br>
+</div>
+<div class="modal-footer">
+	<button type="button" id="btnSaveRegistro" class="btn btn-primary">Enviar</button>
+</div>

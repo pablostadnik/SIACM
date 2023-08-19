@@ -1,0 +1,33 @@
+if(isset($_POST["buscar"]) )
+		{
+			$prop=$par->ver_contribuyentes();
+		?>
+		<div class="container contenido">
+		<?php if (!empty($prop)){ ?>
+		<table class="table table-bordered table-hover" cellspacing="0" id="tabla1" style ="width:800px;">
+		
+			<tr valign="top" align="center" >
+				<th>Id_Codigo</th>
+				<th>Nombre</th>
+				
+			</tr>
+			<?php 
+			for ($i=0;$i<sizeof($prop);$i++){ ?>
+				<tr valign="top" align="center"  onmouseover="this.className = 'resaltar'" onmouseout="this.className = null"  onclick='enviarvariable(this)' >
+					<td valign="top" align="left"><?php if(isset($prop[$i]["id_contribuyente"])) { echo $prop[$i]["id_contribuyente"]; }?></td>
+					<td valign="top" align="left"><?php if(isset($zona[$i]["nombre"])) { echo $prop[$i]["nombre"]; }?></td>
+					
+					
+					
+				</tr>
+			<?php 
+			} 
+			?>
+		
+		</table>
+
+		<?php 
+		}
+		else
+		echo("No se encontro ningun registro");
+		}

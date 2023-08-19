@@ -1,0 +1,79 @@
+<script type="text/javascript" src="../scripts/telefonosUtiles.js"></script>
+
+
+<a href="#" id="lnkNewTelefonoUtil"  data-toggle="modal" data-target="#myModal">
+	<button type="button" class="btn btn-success">Nuevo tel&eacute;fono</button>
+</a><br>
+<table id="tblTelefonos" class="table table-hover message-table" style="table-layout: fixed;">
+	<thead>
+		<tr>
+			<th style="width: 150px;">Nombre</th>
+			<th style="width: 130px;">Especialidad</th>
+			<th style="width: 190px;">Tel&eacute;fono</th>
+			<th style="width: 200px;">E-Mail</th>
+			<th style="text-align: left;">Edificios asociados</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="telefono_util">Luis Moreto</td>
+			<td class="telefono_util">Electricista</td>
+			<td class="telefono_util">11-3114-5341 / 43521134</td>
+			<td class="telefono_util">luis.moreto@gmail.com</td>
+			<td style="text-align: left;">
+				<select multiple="multiple" class="ddlEdificio">  
+				  <option value="1" selected>Alicia Moreau de Justo 740</option>
+				  <option value="2">C&oacute;rdoba 760</option>
+				  <option value="3">Maip&uacute; 650</option>
+				  <option value="4">Lavalle 230</option>
+				  <option value="5">Scalabrini Ortiz 160</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="telefono_util">Emiliano Raicce</td>
+			<td class="telefono_util">Plomero</td>
+			<td class="telefono_util">15-3657-1123 / 43521134</td>
+			<td class="telefono_util">emiliano.raicce21@gmail.com</td>
+			<td style="text-align: left;">
+				<select multiple="multiple" class="ddlEdificio">  
+				  <option value="1" selected>Alicia Moreau de Justo 740</option>
+				  <option value="2">C&oacute;rdoba 760</option>
+				  <option value="3">Maip&uacute; 650</option>
+				  <option value="4">Lavalle 230</option>
+				  <option value="5">Scalabrini Ortiz 160</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="telefono_util">Alberto Juans</td>
+			<td class="telefono_util">Alba&#241;il</td>
+			<td class="telefono_util">15-8766-9922 / 43521134</td>
+			<td class="telefono_util">alberto@juanservicios.com</td>
+			<td style="text-align: left;">
+				<select multiple="multiple" class="ddlEdificio">  
+				  <option value="1" selected>Alicia Moreau de Justo 740</option>
+				  <option value="2">C&oacute;rdoba 760</option>
+				  <option value="3">Maip&uacute; 650</option>
+				  <option value="4">Lavalle 230</option>
+				  <option value="5">Scalabrini Ortiz 160</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="telefono_util">Ra&uacute;l Spinosa</td>
+			<td class="telefono_util">Cerrajero</td>
+			<td class="telefono_util">15-3114-4000 / 43521134</td>
+			<td class="telefono_util">raul.sp@gmail.com</td>
+			<td style="text-align: left;">
+				<select multiple="multiple" class="ddlEdificio">  
+				  <option value="1" selected>Alicia Moreau de Justo 740</option>
+				  <option value="2">C&oacute;rdoba 760</option>
+				  <option value="3">Maip&uacute; 650</option>
+				  <option value="4">Lavalle 230</option>
+				  <option value="5">Scalabrini Ortiz 160</option>
+				</select>
+			</td>	
+		</tr>
+	</tbody>
+</table>

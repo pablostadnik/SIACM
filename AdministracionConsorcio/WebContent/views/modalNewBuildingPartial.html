@@ -1,0 +1,109 @@
+<script type="text/javascript" src="../scripts/modalNewBuildingPartial.js"></script>
+<script type="text/javascript" src="../scripts/bootstrap.file-input.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('input[type=file]').bootstrapFileInput();
+		$('.file-inputs').bootstrapFileInput();
+	});
+</script>
+
+<div class="modal-header" id="modal_partial">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Nuevo edificio</h4>
+</div>
+<div class="modal-body">
+	<div id="imgEdif" class="col-xs-6 col-md-3" style="position: fixed; margin-left: 70%;">
+		  <a href="#" class="thumbnail">
+		    <img src="../images/edificio_mock.jpg">
+		  </a>
+	</div>
+	<div class="row">
+		<div class="col-md-4">C&oacute;digo</div>
+	</div>
+	<div class="row">
+		<div id="txtCode" class="col-md-4"><input readonly="readonly" type="text" value="COD001" class="form-control"></input></div>
+		<div id="imgPrt" class="col-md-5"><a href="#" class="no_link_appearence"><img src="../images/impresora.png" width="10%;" /></a></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-4">
+			Forma de pago
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<select multiple="multiple" id="ddlFormaPago">
+				<option value="1">Pago F&aacute;cil</option>
+				<option value="2">Rapipago</option>
+				<option value="3">PagoMisCuentas</option>
+				<option value="4">Banco</option>
+			</select>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+			<div class="col-md-4">Direcci&oacute;n</div>
+	</div>
+	<div class="row">
+		<div id="txtDire" class="col-md-9"><input placeholder="Ingrese una dirección..." class="form-control" type="text"></input></div>
+		<div class="col-md-3"><input type="file" class="btn-primary" data-filename-placement="inside" title="Imagen..."></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-6">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="rdbEdif" value="option1" checked>
+		    Edificio (Departamentos)
+		  </label>
+		</div>
+		<div class="col-md-6">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="rdbLote" value="option2">
+		    Terreno (Lotes)
+		  </label>
+	  	</div>	
+	</div>
+	<div class="row">
+		<div class="col-md-2">Pisos</div>
+		<div class="col-md-4">Dtos. por piso</div>
+		<div class="col-md-6">Cantidad de lotes</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<select id="ddlPiso" class="form-control">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</o ption>
+			</select>
+		</div>
+		<div class="col-md-2">
+			<select id="ddlDepto" class="form-control">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</div>
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-2">
+			<input type="text" id="ddlLote" disabled="disabled" class="form-control"></input>
+		</div>
+	</div>
+	<!-- <div class="row"> -->	
+	<fieldset>
+		<div class="panel-body" id="esquema"></div>
+	</fieldset>
+	<br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+<button type="button" id="btnSaveBuilding" class="btn btn-primary">Guardar</button>
+</div>

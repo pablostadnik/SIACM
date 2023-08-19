@@ -1,0 +1,43 @@
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0; 
+}
+th:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 6px 0 0;
+}
+
+th:only-child{
+    border-radius: 6px 6px 0 0;
+}
+.bordered tr:hover {
+  background: #fbf8e9;
+  transition: all 0.1s ease-in-out;     
+}
+.highlight {
+  background: #fbf8e9;
+  transition: all 0.1s ease-in-out;     
+}
+
+.btn{
+	
+	opacity: 0.8;
+	
+	
+	border-spacing: 0px;
+	border-radius: 0px;
+	box-shadow: 0px;
+	border: 0px;
+	text-decoration: none;
+	text-shadow: 0px 0px ;
+	font-weight: 0;
+	font-family: Myriad Set Pro;
+	font: 0px;
+	font-variant: 0px;
+}
+.btn:hover{
+	background: grey;
+}

@@ -1,0 +1,3 @@
+SELECT `cooperativa`
+FROM `usuario`
+WHERE `usuario` = 'jorge'

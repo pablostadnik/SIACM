@@ -1,0 +1,16 @@
+<!-- ID's importantes
+	#message_modal_title => título que se visualiza en el modal pop up 
+	#panel_event_title => título que se visualiza en el content del modal (header de panel)
+	#panel_event_content => contenido del panel situado en el content del modal pop-up
+ -->
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4 class="modal-title" id="message_modal_title"></h4>
+</div> 
+<div class="modal-body">
+	<div id="panel_event_content"></div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-success" data-dismiss="modal" style="visibility: hidden;" id="btnExtra"></button>
+  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+</div>

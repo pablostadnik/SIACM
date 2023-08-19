@@ -1,0 +1,61 @@
+<script type="text/javascript" src="../scripts/inbox.js"></script>
+
+<!-- <div class="row">
+	<div class="col-md-2"><label>Tipo de mensaje</label></div>
+	<div class="col-md-3"><label>Remitente</label></div>
+	<div class="col-md-3"><label>Asunto</label></div>
+	<div class="col-md-3"><label>Fecha</label></div>
+</div> -->
+<div class="row">
+	<div class="col-md-2">
+		<select multiple="multiple" id="ddlTipoMensaje" placeholder="Tipo de mensaje...">  
+		  <option value="1">Mensaje</option>
+		  <option value="3">Registro de pago</option>
+		  <option value="2">Sugerencia</option>
+		</select>	
+	</div>
+	<div class="col-md-3"><input type="text" class="form-control" placeholder="Ingrese un remitente..." /></div>
+	<div class="col-md-3"><input type="text" class="form-control" id="txtFecha" placeholder="Seleccione una fecha" /></div>
+	<div class="col-md-3"><input type="text" class="form-control" placeholder="Buscar dentro del mensaje..."  /></div>
+</div>
+<br>
+<table id="tblInbox" class="table table-hover" style="table-layout: fixed;">
+	<tbody>
+		<tr>
+			<td class="tipo_mensaje">Sugerencia</td>
+			<td style="overflow: hidden; white-space: nowrap; width: 500px;">Creo
+				que es buena idea poner plantas en el hall de entrada, para mejorar
+				la est&eacute;tica del edificio!</td>
+			<td style="text-align: right;">Daniel</td>
+			<td style="text-align: right;">Hoy 09:31 am</td>
+		</tr>
+		<tr>
+			<td class="tipo_mensaje">Registro de pago</td>
+			<td style="overflow: hidden; white-space: nowrap; width: 500px;">Nuevo
+				registro de pago del inquilino Jos&eacute;! Los registros de pagos fueron
+				actualizados correctamente.</td>
+			<td style="text-align: right;">Jos&eacute;</td>
+			<td style="text-align: right;">Ayer 11:42 pm</td>
+		</tr>
+		<tr>
+			<td class="tipo_mensaje">Mensaje</td>
+			<td style="overflow: hidden; white-space: nowrap; width: 500px;">Hola!
+				A qui&eacute;n debo llamar para notificar un desperfecto con el
+				ascensor del edificio?</td>
+			<td style="text-align: right;">Ezequiel</td>
+			<td style="text-align: right;">01/03/2015 10:43 am</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- Segundo edificio en el ejemplo -->
+<table id="tblInbox2" class="table table-hover" style="table-layout:fixed; display: none;">
+	  <tbody>
+	    <tr>
+	      <td class="tipo_mensaje">Sugerencia</td>
+	      <td style="overflow:hidden; white-space: nowrap;width: 500px;">Estaría bueno equipar el edificio con lámparas de bajo consumo para ahorrar electricidad!</td>
+	      <td style="text-align: right;">Laura</td>
+	      <td style="text-align: right;">Hoy 11:31 am</td>
+	    </tr>
+	  </tbody>
+</table>

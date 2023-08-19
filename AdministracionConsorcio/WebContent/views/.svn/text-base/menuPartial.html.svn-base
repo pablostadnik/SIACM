@@ -1,0 +1,14 @@
+<script type="text/javascript" src="../scripts/common.js"></script>
+<table class="table" style="background-color: #f7f7f7; box-shadow: 5px 5px 5px #eee; margin-bottom: 0px !important">
+	<tr>
+		<td style="color: Black; width: 20%; border-right:1px solid #eee;">
+			<h4 style="width: 100%;"><a class="no_link_appearence" href="./index.html">Administracion de Consorcios</a></h4>
+		</td>
+		<td style="width: 50%;">&nbsp;</td>
+		<td><a href="#" id="lnkHome"><div class="home" title="Inicio"></div></a></td>
+		<td><a href="#" id="lnkNotifications"><div class="news" title="Notificaciones"></div></a></td>
+		<td><a href="#" id="lnkTelefonos"><div class="telefono" title="Telefonos utiles"></div></a></td>
+		<td><a href="#" id="lnkExpensas"><div class="expensas" title="Expensas"></div></a></td>
+		<td><a href="#" id="lnkSettings"><div class="gear" title="Configuraci�n"></div></a></td>
+	</tr>
+</table>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+			
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css">
+		<link rel="stylesheet" href="../css/prettify.css">
+		<link rel="stylesheet" href="../css/site.css">
+		<link rel="stylesheet" href="../css/bootstrap-multiselect.css">
+		
+		<script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>	
+		<script type="text/javascript" src="../scripts/jquery-ui-1.10.0.custom.min.js"></script>	
+		<script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../scripts/common.js"></script>
+		<script type="text/javascript" src="../scripts/index.js"></script>
+		<script type="text/javascript" src="../scripts/prettify.js"></script>
+		<script type="text/javascript" src="../scripts/bootstrap-multiselect.js"></script>
+				
+		<title>Administracion de Consorcios</title>
+	</head>
+
+	<body>
+	<div id="main_header"></div>
+	</br>
+		<div style="float: left; width:20%;" class="panel panel-primary">
+			<div class="panel-body">
+				<ul  id="edificios_list" class="nav nav-pills nav-stacked">	
+				  <li><a id="lnkNewBuilding" data-toggle="modal" data-target="#myModal" style="border-bottom: solid 1px #eee;" href="#"><b>+ Nuevo edificio ...</b></a></li>
+				  <li role="presentation" class="active"><a href="#" id="lnkDpto3" style="padding-left: 5px;"><img name="editar_edificio" src="../images/editar.png" style="width: 7%;" />&nbsp;Alicia Moreau de Justo 740 <b>(3)</b></a></li>
+				  <li role="presentation"><a href="#" id="lnkDpto1" style="padding-left: 5px;"><img name="editar_edificio" src="../images/editar.png" style="width: 7%;" />&nbsp;C&oacute;rdoba 760 <b>(1)</b></a></li>
+				  <li role="presentation"><a href="#" id="lnkDpto4" style="padding-left: 5px;"><img name="editar_edificio" src="../images/editar.png" style="width: 7%;" />&nbsp;Lavalle 230</a></li>
+				  <li role="presentation"><a href="#" id="lnkDpto2" style="padding-left: 5px;"><img name="editar_edificio" src="../images/editar.png" style="width: 7%;" />&nbsp;Maip&uacute; 650</a></li>
+				  <li role="presentation"><a href="#" id="lnkDpto5" style="padding-left: 5px;"><img name="editar_edificio" src="../images/editar.png" style="width: 7%;" />&nbsp;Scalabrini Ortiz 160</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="float:right; width:75%; margin-right: 2%;">
+			<div class="row" style="text-align: right; margin-right: 1%;">
+				<a href="#"><img src="../images/impresora.png" width="2%;" title="Imprimir"/></a>&nbsp;
+				<a href="#"><img src="../images/exportar.png" width="2%;" title="Exportar" /></a>
+			</div>
+			<div class="panel-body" id="main_body" style="position: relative;">
+				
+			</div>
+		</div>
+		<div id="success_message" class="alert alert-success" style="display: none; float: right; position: relative; width: 40%; height: 50px; margin-left: 60%; margin-top: 8%;" role="alert">
+			<label id="success_message_content">La operación se realizó con éxito!</label>
+		</div>
+		<div id="myModal" class="modal fade">
+		  <div class="modal-dialog">
+		    <div class="modal-content" id="modal-content">
+		      
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+	</body>
+	<footer>
+			<h6>(C) 2015 - Todos los derechos Reservados</h6>
+	</footer>
+</html>
